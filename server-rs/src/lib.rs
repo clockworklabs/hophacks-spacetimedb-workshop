@@ -61,7 +61,9 @@ pub fn send_message(ctx: &ReducerContext, text: String) -> Result<(), String> {
 
 #[spacetimedb::reducer(init)]
 // Called when the module is initially published
-pub fn init(_ctx: &ReducerContext) {}
+pub fn init(_ctx: &ReducerContext) {
+
+}
 
 #[spacetimedb::reducer(client_connected)]
 pub fn identity_connected(ctx: &ReducerContext) {

@@ -130,7 +130,7 @@ function App() {
 
     setConn(
       DbConnection.builder()
-        .withUri('ws://localhost:3000')
+        .withUri('wss://maincloud.spacetimedb.com')
         .withModuleName('hophacks-chat')
         .withToken(localStorage.getItem('auth_token') || '')
         .onConnect(onConnect)
